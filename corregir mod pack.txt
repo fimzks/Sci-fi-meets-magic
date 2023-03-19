@@ -1,0 +1,17 @@
+
+-problemas de crafteos con tiny coal
+-hacer que no se puedan romper planks
+-quitar la fundicion de metales de herramientas?
+-quitar fundicion de metales en horno normal?
+-los poor metals del railcraft se pueden fundir?
+-aumentar los requerimientos para la celula de energia de ID?
+-planeta calisto se pega permanentemente
+-muy pocos dragones en Ganymede
+-quitar todos los brass de oredict menos alchemical brass o quitar el alchemical brass y ponerlo enves del brass en los crafteos/ y recolocar el brass donde corresponda
+-esconder ironplate del thaumcraft del jei
+-modificar recentas del thaumcraft para que solo sirvan alchemical brass
+-unificar las plates
+-añadir plutonium a un planeta
+-arreglar los arcane mechanical para que sean en la arcane workbemch
+
+changelog 0.1.20:
