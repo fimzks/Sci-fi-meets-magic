@@ -103,8 +103,8 @@
             </planet>
             <planet DIMID="518" customIcon="Moon" name="Ganymede">
                 <isKnown>true</isKnown>
-                <skyColor>7A0893</skyColor>
-                <fogColor>5A076D</fogColor>
+                <fogColor>1.0,1.0,1.0</fogColor>
+                <skyColor>1.0,1.0,1.0</skyColor>
                 <gravitationalMultiplier>28</gravitationalMultiplier>
                 <orbitalDistance>142</orbitalDistance>
                 <orbitalTheta>121</orbitalTheta>
@@ -2380,8 +2380,8 @@
             </planet>
         </planet>
     </star>
-    <star blackHole="false" name="Ascension" numGasGiants="0" numPlanets="0" size="1.0" temp="110" x="-75" y="60">
-        <star blackHole="true" separation="30.0" size="1.0" temp="110"/>
+<star blackHole="false" name="Ascension" numGasGiants="0" numPlanets="0" size="1.0" temp="110" x="-75" y="60">
+        <star blackHole="true" name="Dragon's Haze" separation="30.0" size="1.0" temp="110"/>
         <planet DIMID="420" name="Ascension II">
             <isKnown>true</isKnown>
             <fogColor>0.0,0.0,0.0</fogColor>
@@ -2462,32 +2462,36 @@
                 <oceanBlock>minecraft:lava</oceanBlock>
             </planet>
         </planet>
-    </star>
-    <star blackHole="true" name="Dragon's Breath" numGasGiants="0" numPlanets="0" size="6.0" temp="0" x="300" y="0"/>
-        <planet DIMID="600" customIcon="Moon" name="Purpureus Scale">
+            <planet DIMID="100" customIcon="purpureusscale" name="Purpureus Scale">
             <isKnown>true</isKnown>
-            <skyColor>7A0893</skyColor>
-            <fogColor>5A076D</fogColor>
+            <skyColor>0x6a137d</skyColor>
+            <fogColor>0x3e064f</fogColor>
+            <hasRings>true</hasRings>
+            <ringColor>0.4,0.4,0.7</ringColor>
             <gravitationalMultiplier>28</gravitationalMultiplier>
-            <orbitalDistance>142</orbitalDistance>
+            <orbitalDistance>15</orbitalDistance>
             <orbitalTheta>121</orbitalTheta>
             <orbitalPhi>0</orbitalPhi>
             <retrograde>false</retrograde>
-            <avgTemperature>241</avgTemperature>
-            <rotationalPeriod>655437</rotationalPeriod>
+            <avgTemperature>300</avgTemperature>
+            <rotationalPeriod>6554</rotationalPeriod>
             <atmosphereDensity>100</atmosphereDensity>
-            <generateCraters>false</generateCraters>
-            <generateCaves>false</generateCaves>
-            <generateVolcanos>false</generateVolcanos>
+            <generateCraters>true</generateCraters>
+            <generateCaves>true</generateCaves>
+            <generateVolcanos>true</generateVolcanos>
             <generateStructures>false</generateStructures>
-            <generateGeodes>false</generateGeodes>
-            <biomeIds>advancedrocketry:hotdryrock;30</biomeIds>
+            <generateGeodes>true</generateGeodes>
+            <biomeIds>169,168,148</biomeIds>
+            <oceanBlock>advancedrocketry:enrichedlava</oceanBlock>
             <OreGen>
-            <ore block="draconicevolution:draconium_ore" minHeight="1" maxHeight="32" clumpSize="8" chancePerChunk="10"/>
+                <ore block="draconicevolution:draconium_ore" minHeight="1" maxHeight="32" clumpSize="8" chancePerChunk="10"/>
             </OreGen>
-            <spawnable weight="1" groupMin="1" groupMax="1">iceandfire:firedragon</spawnable>
-            <spawnable weight="1" groupMin="1" groupMax="1">iceandfire:icedragon</spawnable>
+            <spawnable weight="50" groupMin="1" groupMax="2">iceandfire:firedragon</spawnable>
+            <spawnable weight="50" groupMin="1" groupMax="2">iceandfire:icedragon</spawnable>
         </planet>
+    </star>
+
+    <star blackHole="true" name="Black Hole" numGasGiants="0" numPlanets="0" size="6.0" temp="0" x="300" y="0"/>
     <star blackHole="true" name="IC 13*" numGasGiants="0" numPlanets="0" size="2.4" temp="0" x="-172" y="-28"/>
     <star blackHole="false" name="G-100 #0" numGasGiants="0" numPlanets="0" size="1.0" temp="87" x="-166" y="-15"/>
     <star blackHole="false" name="G-100 #1" numGasGiants="0" numPlanets="0" size="1.0" temp="142" x="-178" y="-15"/>
