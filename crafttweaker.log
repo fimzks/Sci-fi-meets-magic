@@ -31,7 +31,41 @@
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: advanced rocketry.zs}
 [INITIALIZATION][CLIENT][INFO] advanced rocketry
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: aroma.zs}
+[INITIALIZATION][CLIENT][ERROR] aroma.zs:4: Could not resolve <aroma1997sdimension : miningmultitool>
+[INITIALIZATION][CLIENT][ERROR] aroma.zs:5: Could not resolve <aroma1997sdimension : miningmultitool>
 [INITIALIZATION][CLIENT][INFO] aroma
+[INITIALIZATION][CLIENT][ERROR] Cannot remove recipes for a null item!
+[INITIALIZATION][CLIENT][ERROR] [crafttweaker]: Error executing {[0:crafttweaker]: aroma.zs}: null
+java.lang.NullPointerException
+	at crafttweaker.mc1120.recipes.MCRecipeShaped.toCommandString(MCRecipeShaped.java:335)
+	at crafttweaker.mc1120.recipes.MCRecipeManager$ActionBaseAddRecipe.calculateName(MCRecipeManager.java:752)
+	at crafttweaker.mc1120.recipes.MCRecipeManager$ActionBaseAddRecipe.setName(MCRecipeManager.java:746)
+	at crafttweaker.mc1120.recipes.MCRecipeManager$ActionAddShapedRecipe.<init>(MCRecipeManager.java:787)
+	at crafttweaker.mc1120.recipes.MCRecipeManager$ActionAddShapedRecipe.<init>(MCRecipeManager.java:782)
+	at crafttweaker.mc1120.recipes.MCRecipeManager.addShaped(MCRecipeManager.java:159)
+	at Aroma.__script__(aroma.zs:5)
+	at __ZenMain__.run(Aroma)
+	at crafttweaker.runtime.CrTTweaker.loadScript(CrTTweaker.java:240)
+	at crafttweaker.runtime.CrTTweaker.loadScript(CrTTweaker.java:105)
+	at crafttweaker.mc1120.events.CommonEventHandler.registerRecipes(CommonEventHandler.java:71)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_812_CommonEventHandler_registerRecipes_Register.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144)
+	at com.github.terminatornl.laggoggles.tickcentral.EventBusTransformer.redirectEvent(EventBusTransformer.java:67)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.registries.GameData.fireRegistryEvents(GameData.java:857)
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:636)
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:747)
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:336)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:535)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:378)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: calculator.zs}
 [INITIALIZATION][CLIENT][INFO] calculator
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: computers.zs}
@@ -57,7 +91,7 @@
 [INITIALIZATION][CLIENT][INFO] Adding Blueprint Recipe for Steel Mechanical Component
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: integrated dynamics.zs}
 [INITIALIZATION][CLIENT][INFO] Integrated dynamics
-[INITIALIZATION][CLIENT][INFO] Removing 1 DryingBasin Recipe(s) for DryingBasin recipe: Input: IngredientAndFluidStackRecipeComponent(ingredient=net.minecraft.item.crafting.Ingredient@2ef3a97c, fluidStack=null, chance=0.0); Output: IngredientAndFluidStackRecipeComponent(ingredient=net.minecraft.item.crafting.Ingredient@55628acb, fluidStack=null, chance=0.0); Properties: DurationRecipeProperties(duration=100); 
+[INITIALIZATION][CLIENT][INFO] Removing 1 DryingBasin Recipe(s) for DryingBasin recipe: Input: IngredientAndFluidStackRecipeComponent(ingredient=net.minecraft.item.crafting.Ingredient@404c47c7, fluidStack=null, chance=0.0); Output: IngredientAndFluidStackRecipeComponent(ingredient=net.minecraft.item.crafting.Ingredient@32b17d5e, fluidStack=null, chance=0.0); Properties: DurationRecipeProperties(duration=100); 
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: mekanism.zs}
 [INITIALIZATION][CLIENT][INFO] mekanism
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: metals.zs}
@@ -227,7 +261,7 @@ Exception Details:
 	at crafttweaker.runtime.CrTTweaker.loadScript(CrTTweaker.java:240)
 	at crafttweaker.runtime.CrTTweaker.loadScript(CrTTweaker.java:105)
 	at crafttweaker.mc1120.events.CommonEventHandler.registerRecipes(CommonEventHandler.java:71)
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_844_CommonEventHandler_registerRecipes_Register.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_812_CommonEventHandler_registerRecipes_Register.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
 	at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144)
 	at com.github.terminatornl.laggoggles.tickcentral.EventBusTransformer.redirectEvent(EventBusTransformer.java:67)
@@ -259,7 +293,7 @@ Exception Details:
 [INITIALIZATION][CLIENT][INFO] Altering Casting Recipe(s) for <forestry:gear_bronze>
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: vanilla.zs}
 [INITIALIZATION][CLIENT][INFO] Basic
-[INITIALIZATION][CLIENT][INFO] Completed script loading in: 955ms
+[INITIALIZATION][CLIENT][INFO] Completed script loading in: 838ms
 [POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs
 [POSTINITIALIZATION][CLIENT][INFO] Removing Shapeless recipes for <ore:plateIron>
 [POSTINITIALIZATION][CLIENT][INFO] Removing 0 Shapeless recipes.
@@ -270,7 +304,6 @@ Exception Details:
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Liquid IO Circuit Board with name ct_shaped1766407507
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Gas Charge Pad with name ct_shaped-419870348
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Titanium Block with name ct_shaped1163299685
-[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Mining Multitool with name ct_shaped357603819
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Calculator Screen with name ct_shaped1833099219
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Calculator Assembly with name ct_shaped-840137427
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Control Unit (CU) with name ct_shaped-1912975027
@@ -300,7 +333,7 @@ Exception Details:
 [POSTINITIALIZATION][CLIENT][INFO] Removing furnace recipes for: <*>
 [POSTINITIALIZATION][CLIENT][INFO] 1 recipes removed for: <*>
 [POSTINITIALIZATION][CLIENT][INFO] Removing furnace recipes for: <*>
-[POSTINITIALIZATION][CLIENT][INFO] 33 recipes removed for: <*>
+[POSTINITIALIZATION][CLIENT][INFO] 31 recipes removed for: <*>
 [POSTINITIALIZATION][CLIENT][INFO] Removing furnace recipes for: <*>
 [POSTINITIALIZATION][CLIENT][INFO] 1 recipes removed for: <*>
 [POSTINITIALIZATION][CLIENT][INFO] Removing furnace recipes for: <*>
@@ -379,3 +412,14 @@ Exception Details:
 [AVAILABLE][CLIENT][INFO] Hiding item in JEI: <techreborn:bronzespade>
 [AVAILABLE][CLIENT][INFO] Hiding item in JEI: <techreborn:bronzepickaxe>
 [AVAILABLE][CLIENT][INFO] Hiding item in JEI: <techreborn:bronzesword>
+<forestry:resource_storage:3>
+<techreborn:storage:14>
+<railcraft:metal:5>
+<mekanism:basicblock:1>
+<basemetals:bronze_block>
+<integrateddynamics:on_the_dynamics_of_integration>
+<basemetals:copper_ore>
+<mekanism:oreblock:1>
+<techreborn:ore2>
+<railcraft:ore_metal>
+<immersiveengineering:ore>

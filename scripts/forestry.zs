@@ -17,3 +17,9 @@ mods.forestry.Carpenter.addRecipe(<forestry:chipsets:1>, [[<calculator:redstonei
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:2>, [[<calculator:redstoneingot>, <calculator:circuitboard:10>.withTag({Stable: 0, Analysed: 1 as byte}), <calculator:redstoneingot>], [<appliedenergistics2:material:10>, <calculator:circuitboard:6>.withTag({Stable: 0, Analysed: 1 as byte}), <appliedenergistics2:material:10>], [<calculator:redstoneingot>, <calculator:circuitboard:11>.withTag({Stable: 0, Analysed: 1 as byte}), <calculator:redstoneingot>]], 20, <liquid:water> * 1000);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>, [[<calculator:redstoneingot>, <calculator:circuitboard:2>.withTag({Stable: 0, Analysed: 1 as byte}), <calculator:redstoneingot>], [<ore:ingotGold>, <calculator:circuitboard:1>.withTag({Stable: 0, Analysed: 1 as byte}), <ore:ingotGold>], [<calculator:redstoneingot>, <calculator:circuitboard:3>.withTag({Stable: 0, Analysed: 1 as byte}), <calculator:redstoneingot>]], 20, <liquid:water> * 1000);
 
+//bronze from broken pickaxe
+mods.forestry.Carpenter.removeRecipe(<ic2:ingot:1>*r);
+mods.forestry.Carpenter.addRecipe(<ic2:ingot:1>*2,[[<forestry:broken_bronze_pickaxe>]], 4);
+//bronze from broken pickaxe
+mods.forestry.Carpenter.removeRecipe(<ic2:ingot:1>);
+mods.forestry.Carpenter.addRecipe(<ic2:ingot:1>,[[<forestry:broken_bronze_shovel>]], 4);

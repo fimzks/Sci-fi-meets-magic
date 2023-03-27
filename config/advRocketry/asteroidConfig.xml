@@ -20,8 +20,8 @@
 	</asteroid>
 	<asteroid name="Metalic Asteroid" distance="10" mass="100" massVariability="0.5" minLevel="0" probability="8" richness="0.2" richnessVariability="0.5">
 		<ore itemStack="minecraft:iron_ore" chance="15" />
-		<ore itemStack="libvulpes:ore0 8" chance="10" />
-		<ore itemStack="libvulpes:ore0 4" chance="10" />
+		<ore itemStack="modernmetals:titanium_ore" chance="10" />
+		<ore itemStack="ic2:resource 1" chance="10" />
 		<ore itemStack="minecraft:cobblestone" chance="20" />
 	</asteroid>
 	<asteroid name="Old Booster" distance="40" mass="20" massVariability="0.2" minLevel="0" probability="0.5" richness="1.0" richnessVariability="0.1">
