@@ -46,7 +46,12 @@ for item in remove{
 
 val removenhide=   [<libvulpes:ore0:4>,
 					<forestry:resources:1>,
-					<forestry:resources:2>] as IIngredient[];
+					<forestry:resources:2>,
+					<basemetals:copper_ore>,
+					<mekanism:oreblock:1>,
+					<techreborn:ore2>,
+					<railcraft:ore_metal>,
+					<immersiveengineering:ore>] as IIngredient[];
 for item in removenhide{
 	recipes.remove(item);
     mods.jei.JEI.removeAndHide(item);
@@ -58,13 +63,4 @@ val remove =   [<forestry:resource_storage:3>,
 				<basemetals:bronze_block>] as IIngredient[];
 for item in remove{
 	recipes.remove(item);
-	}
-
-val hide = [<basemetals:copper_ore>,
-			<mekanism:oreblock:1>,
-			<techreborn:ore2>,
-			<railcraft:ore_metal>,
-			<immersiveengineering:ore>] as IIngredient[];
-for item in hide{
-	mods.jei.JEI.hide(item);
 	}

@@ -17,7 +17,7 @@
             <generateVolcanos>false</generateVolcanos>
             <generateStructures>false</generateStructures>
             <generateGeodes>false</generateGeodes>
-            <planet DIMID="502" customIcon="Moon" name="Moon">
+            <planet DIMID="502" customIcon="Moon" name="Luna">
                 <isKnown>true</isKnown>
                 <fogColor>1.0,1.0,1.0</fogColor>
                 <skyColor>1.0,1.0,1.0</skyColor>
@@ -2469,11 +2469,11 @@
             <hasRings>true</hasRings>
             <ringColor>0.4,0.4,0.7</ringColor>
             <gravitationalMultiplier>28</gravitationalMultiplier>
-            <orbitalDistance>15</orbitalDistance>
+            <orbitalDistance>80</orbitalDistance>
             <orbitalTheta>121</orbitalTheta>
-            <orbitalPhi>0</orbitalPhi>
-            <retrograde>false</retrograde>
-            <avgTemperature>300</avgTemperature>
+            <orbitalPhi>30</orbitalPhi>
+            <retrograde>true</retrograde>
+            <avgTemperature>287</avgTemperature>
             <rotationalPeriod>6554</rotationalPeriod>
             <atmosphereDensity>100</atmosphereDensity>
             <generateCraters>true</generateCraters>
@@ -2481,8 +2481,8 @@
             <generateVolcanos>true</generateVolcanos>
             <generateStructures>false</generateStructures>
             <generateGeodes>true</generateGeodes>
-            <biomeIds>169,168,148</biomeIds>
-            <oceanBlock>advancedrocketry:enrichedlava</oceanBlock>
+            <biomeIds>advancedrocketry:volcanic;30,advancedrocketry:stormland;30,advancedrocketry:volcanicbarren;30</biomeIds>
+            <oceanBlock>lycanitesmobs:acid</oceanBlock>
             <OreGen>
                 <ore block="draconicevolution:draconium_ore" minHeight="1" maxHeight="32" clumpSize="8" chancePerChunk="10"/>
             </OreGen>
